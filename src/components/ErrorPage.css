@@ -1,0 +1,57 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    width: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 9999999;
+    -webkit-transition: .9s;
+    transition: .9s;
+  }
+  
+  .preloader .loader {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 45%;
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .preloader::before, .preloader::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+    z-index: -1;
+    background: #fbfbfb;
+    -webkit-transition: .9s;
+    transition: .9s;
+  }
+  
+  .preloader::after {
+    left: auto;
+    right: 0;
+  }
+ .loader-error-heading{
+  color: #000;
+  font-family: 'Bakbak One', cursive;
+  font-size: 2rem;
+  line-height: 1;
+  text-transform: uppercase;
+ } 
+.loader-error-btn{
+  background-color: #00A082 !important;
+  border:none !important;
+  
+}
